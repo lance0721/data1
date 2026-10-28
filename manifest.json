@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "超星刷课助手",
+  "version": "2.2.0",
+  "description": "超星泛雅自动刷课 v2：静音自动播放视频任务点，播完自动下一个视频，当前页全部播完自动进入下一章。",
+  "content_scripts": [
+    {
+      "matches": ["*://*.chaoxing.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ]
+}
